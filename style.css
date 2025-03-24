@@ -6,8 +6,13 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif
 }
+    :root {
+        --black: #141414;
+        --dark_gray: #1F1F1F;
+        --white: #fff;
+    }
 body {
-    background-color: #141414;
+    background-color: var(--black);
     height: 100vh;
 
     display: flex;
@@ -17,12 +22,12 @@ body {
 }
 
 div {
-    background-color: #1F1F1F;
-    color: White;
+    background-color: var(--dark_gray);
+    color: var(--white);
     width: 384px;
     text-align: center;
-    border-radius: 30px;
-    padding: 3%
+    border-radius: 12px;
+    padding: 40px;
 
 }
 ul, li {
@@ -31,17 +36,15 @@ ul, li {
 
 img{
     width: 88px;
-    margin: auto;
-    display: block;
-    border-radius: 120px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    
 }
-h1{
-    text-align: center;
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 4px;
 }
-p{
-    text-align: center;
-}
-strong{
-    color: greenyellow;
-}
+
 
